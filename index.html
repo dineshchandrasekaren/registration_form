@@ -28,7 +28,7 @@
       <div>
         <label for="dob">DATE OF BIRTH </label>
         <div>
-          <select name="day" id="day">
+          <select name="day" id="day" required>
             <option value="">day</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -62,7 +62,7 @@
             <option value="30">30</option>
             <option value="31">31</option>
           </select>
-          <select name="month" id="month">
+          <select name="month" id="month" required>
             <option value="">month</option>
             <option value="jan">January</option>
             <option value="feb">February</option>
@@ -77,7 +77,7 @@
             <option value="nov">November</option>
             <option value="dec">December</option>
           </select>
-          <select name="year" id="year">
+          <select name="year" id="year" required>
             <option value="">year</option>
             <option value="2025">2025</option>
             <option value="2024">2024</option>
@@ -114,24 +114,24 @@
       </div>
       <div>
         <label for="address">ADDRESS</label>
-        <textarea name="address" id="address" rows="10" cols="50%"></textarea>
+        <textarea required name="address" id="address" rows="10" cols="50%"></textarea>
       </div>
 
       <div>
-        <label for="city">CITY</label><input type="text" pattern="[A-Za-z]{4,30}" name="city" id="city" />
+        <label for="city">CITY</label><input required type="text" pattern="[A-Za-z]{4,30}" name="city" id="city" />
         <span>(max 30 characters a-z and A-Z)</span>
       </div>
       <div>
-        <label for="pincode">PINCODE</label><input type="number" pattern="[0-9]{6}" name="pincode" id="pincode" />
+        <label for="pincode">PINCODE</label><input required type="number" pattern="[0-9]{6}" name="pincode" id="pincode" />
         <span>(6 digit number)</span>
       </div>
 
       <div>
-        <label for="state">STATE</label><input type="text" pattern="[A-Za-z]{4,30}" name="state" id="state" />
+        <label for="state">STATE</label><input required type="text" pattern="[A-Za-z]{4,30}" name="state" id="state" />
         <span>(max 30 characters a-z and A-Z)</span>
       </div>
       <div>
-        <label for="country">COUNTRY</label><input type="text" name="country" id="country" />
+        <label for="country">COUNTRY</label><input required type="text" name="country" id="country" />
       </div>
 
       <div>
