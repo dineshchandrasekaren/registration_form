@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Registration Form</title>
+</head>
+
+<body>
+  <fieldset>
+    <legend>STUDENT REGISTRATION FORM</legend>
+    <form action="">
+      <div>
+        <label for="fname">FIRST NAME </label>
+        <input required type="text" name="fname" id="fname" pattern="[A-Za-z]{1,30}"
+          title="Only letters allowed, maximum 30 characters" maxlength="30" placeholder="john" />
+        <span>(max 30 characters a-z and A-Z)</span>
+      </div>
+      <div>
+        <label for="lname">FIRST NAME </label>
+        <input required type="text" name="lname" id="lname" pattern="[A-Za-z]{1,30}"
+          title="Only letters allowed, maximum 30 characters" maxlength="30" placeholder="doe" />
+        <span>(max 30 characters a-z and A-Z)</span>
+      </div>
+      <div>
+        <label for="dob">DATE OF BIRTH </label>
+        <div>
+          <select name="day" id="day">
+            <option value="">day</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+          </select>
+          <select name="month" id="month">
+            <option value="">month</option>
+            <option value="jan">January</option>
+            <option value="feb">February</option>
+            <option value="mar">March</option>
+            <option value="apr">April</option>
+            <option value="may">May</option>
+            <option value="jun">June</option>
+            <option value="jul">July</option>
+            <option value="aug">August</option>
+            <option value="sep">September</option>
+            <option value="oct">October</option>
+            <option value="nov">November</option>
+            <option value="dec">December</option>
+          </select>
+          <select name="year" id="year">
+            <option value="">year</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label for="email">EMAIL </label>
+        <input required type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}"
+          title="Enter a valid email address" placeholder="example@mail.com" />
+      </div>
+      <div>
+        <label for="phonenp">PHONE NUMBER </label>
+        <input required type="tel" name="phonenumber" pattern="[0-9]{10}" title="Enter a valid 10-digit phone number"
+          placeholder="9876543210" maxlength="10" />
+        <span>(10 digit number)</span>
+      </div>
+      <div>
+        <label for="gender">GENDER</label>
+
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+      </div>
+      <div>
+        <label for="address">ADDRESS</label>
+        <textarea name="address" id="address" rows="10" cols="50%"></textarea>
+      </div>
+
+      <div>
+        <label for="city">CITY</label><input type="text" pattern="[A-Za-z]{4,30}" name="city" id="city" />
+        <span>(max 30 characters a-z and A-Z)</span>
+      </div>
+      <div>
+        <label for="pincode">PINCODE</label><input type="number" pattern="[0-9]{6}" name="pincode" id="pincode" />
+        <span>(6 digit number)</span>
+      </div>
+
+      <div>
+        <label for="state">STATE</label><input type="text" pattern="[A-Za-z]{4,30}" name="state" id="state" />
+        <span>(max 30 characters a-z and A-Z)</span>
+      </div>
+      <div>
+        <label for="country">COUNTRY</label><input type="text" name="country" id="country" />
+      </div>
+
+      <div>
+        <label for="hobbies">HOBBIES</label>
+
+        <div class="flex-wrap-gap">
+          <input type="checkbox" id="drawing" name="hobbies" value="drawing" />
+          <label for="drawing">Drawing</label>
+          <input type="checkbox" id="singing" name="hobbies" value="singing" />
+          <label for="singing">Singing</label>
+          <input type="checkbox" id="dancing" name="hobbies" value="dancing" />
+          <label for="dancing">Dancing</label>
+          <input type="checkbox" id="sketching" name="hobbies" value="sketching" />
+          <label for="sketching">Sketching</label>
+          <input type="checkbox" id="others" name="hobbies" value="others" />
+          <span>
+            <label for="others">Others:</label>
+            <input type="text" id="otherHobby" name="otherHobby" placeholder="Please specify" />
+          </span>
+        </div>
+      </div>
+      </div>
+      <div>
+        <label for="qualification">QUALIFICATION</label>
+
+          <table>
+            <thead>
+              <tr>
+                <th>SI.No</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of Passing</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Class X</td>
+                <td><input type="text"  name="qualification[x][board]" pattern="[A-Za-z]{10}"/></td>
+                <td><input type="number"  name="qualification[x][percentage]" pattern="^[0-9]{1,2}(\.[0-9]{1,2})?$"
+/></td>
+                <td><input type="number"  name="qualification[x][year]" pattern="[0-9]{4}"/></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Class XII</td>
+                <td><input type="text"  name="qualification[xii][board]" pattern="[A-Za-z]{10}"/></td>
+                <td><input type="number"  name="qualification[xii][percentage]" pattern="^[0-9]{1,2}(\.[0-9]{1,2})?$"
+/></td>
+                <td><input type="number"  name="qualification[xii][year]" pattern="[0-9]{4}"/></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Graduation</td>
+                <td><input type="text"  name="qualification[ug][board]" pattern="[A-Za-z]{10}"/></td>
+                <td><input type="number"  name="qualification[ug][percentage]" pattern="^[0-9]{1,2}(\.[0-9]{1,2})?$"
+/></td>
+                <td><input type="number"  name="qualification[ug][year]" pattern="[0-9]{4}"/></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Masters</td>
+                <td><input type="text"  name="qualification[pg][board]"  pattern="[A-Za-z]{10}"/></td>
+                <td><input type="number"  name="qualification[pg][percentage]" pattern="^[0-9]{1,2}(\.[0-9]{1,2})?$"
+/></td>
+                <td><input type="number"  name="qualification[pg][year]" pattern="[0-9]{4}"/></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>(10 char max)</td>
+                <td>(upto 2 decimal)</td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+      </div>
+      <div>
+        <label>COURSES APPLIED FOR</label>
+
+        <div class="flex-wrap-gap">
+          <input type="radio" id="bca" name="course" value="BCA" />
+          <label for="bca">BCA</label>
+          <input type="radio" id="bcom" name="course" value="B.Com" />
+          <label for="bcom">B.Com</label>
+          <input type="radio" id="bsc" name="course" value="B.Sc" />
+          <label for="bsc">B.Sc</label>
+          <input type="radio" id="ba" name="course" value="B.A" />
+          <label for="ba">B.A</label>
+        </div>
+      </div><br>
+      <div style="width: min-content;margin: auto;">
+        <input type="submit">
+        <input type="reset">
+      </div>
+    </form>
+  </fieldset>
+</body>
+
+</html>

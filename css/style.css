@@ -1,0 +1,79 @@
+/******************** FONT FACE ***********************/
+
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica"), url("Helvetica-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica"), url("Helvetica.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Light"),
+    url("helvetica-light-587ebe5a59211.woff") format("woff");
+}
+
+
+/******************** STYLES ***********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+  background-color: rebeccapurple;
+  max-width: 1000px;
+  margin: auto;
+  padding: 15px;
+}
+fieldset {
+  border: none;
+}
+legend {
+  width: fit-content;
+  margin: auto;
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: underline;
+  color: rebeccapurple;
+}
+form > div,
+.flex-wrap-gap {
+  display: flex;
+  gap: 20px;
+}
+
+.flex-wrap-gap{
+    flex-wrap: wrap;
+    align-items: center;
+}
+form > div > label {
+  width: 150px;
+  font-weight: 600;
+}
+input,select{
+    padding: 10px 15px;
+}
+table {
+ width: auto; table-layout: auto;
+}
+@media (max-width:450px) {
+    form > div{
+        flex-direction: column;
+    }
+}
